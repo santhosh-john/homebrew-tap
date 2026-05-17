@@ -5,21 +5,21 @@
 class Awsmgr < Formula
   desc "Operational workflow and environment diagnostics tool for AWS engineers."
   homepage "https://github.com/santhosh-john/awsmgr"
-  version "1.0.3"
+  version "1.0.5"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/santhosh-john/awsmgr/releases/download/v1.0.3/awsmgr_1.0.3_darwin_amd64.tar.gz"
-      sha256 "8e8361bcfa5e110a969fe4540374121c7a728f2d3a2ca60fa9759b5b7d5033e0"
+      url "https://github.com/santhosh-john/awsmgr/releases/download/v1.0.5/awsmgr_1.0.5_darwin_amd64.tar.gz"
+      sha256 "2ce28f5a30b7ef4131aaf65e7744819060ae7e78d9a40388764141e6c2811ec2"
 
       define_method(:install) do
         bin.install "awsmgr"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/santhosh-john/awsmgr/releases/download/v1.0.3/awsmgr_1.0.3_darwin_arm64.tar.gz"
-      sha256 "e8d7129e2737b243bae9c4e44fd7248eb2f33dd57494f22a0771fcc6cb384ce8"
+      url "https://github.com/santhosh-john/awsmgr/releases/download/v1.0.5/awsmgr_1.0.5_darwin_arm64.tar.gz"
+      sha256 "ef87d4d8778a50eee77d35b4459570764f3cac6f49f8cf51ad0dca28e86a6d65"
 
       define_method(:install) do
         bin.install "awsmgr"
@@ -29,15 +29,15 @@ class Awsmgr < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/santhosh-john/awsmgr/releases/download/v1.0.3/awsmgr_1.0.3_linux_amd64.tar.gz"
-      sha256 "cd43b31f370ce2b3ae0bf17bef6fc04f1e60f6e615790b8ddb71b61bb4c59adf"
+      url "https://github.com/santhosh-john/awsmgr/releases/download/v1.0.5/awsmgr_1.0.5_linux_amd64.tar.gz"
+      sha256 "5a7203083a9e25263b67176d1cca6771dfc06a35b695006c7cc6d96b48608ef3"
       define_method(:install) do
         bin.install "awsmgr"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/santhosh-john/awsmgr/releases/download/v1.0.3/awsmgr_1.0.3_linux_arm64.tar.gz"
-      sha256 "bc602bb3a43c16e7f4eb6759ee9569985ebb6d8625873abb8a4848453bd22fdf"
+      url "https://github.com/santhosh-john/awsmgr/releases/download/v1.0.5/awsmgr_1.0.5_linux_arm64.tar.gz"
+      sha256 "39d3402487f2891af13b1c31629c6624f6c042baf0d0258ec1c33b0c8f7367cd"
       define_method(:install) do
         bin.install "awsmgr"
       end
