@@ -6,18 +6,18 @@ class Awsmgr < Formula
   if OS.mac?
     if Hardware::CPU.arm?
       url "https://github.com/santhosh-john/awsmgr/releases/download/v1.0.0/awsmgr_1.0.0_darwin_arm64.tar.gz"
-      sha256 "a09c72ff5090d5e7f7378aac6463347f058bff474c8269eb7f7d6d5aa1f39675"
+      sha256 "6c71369e25b9acb7323b9cfd219151c70d2468242b33dc2bef02bdceea3fd0fd"
     else
       url "https://github.com/santhosh-john/awsmgr/releases/download/v1.0.0/awsmgr_1.0.0_darwin_amd64.tar.gz"
-      sha256 "e448192f5eda30b9d70eaafa2c80cf87c7002b4e3bfed1f66887cb5328b9b63c"
+      sha256 "3e44afe0fac0f14a616e635cee0236b48fc928b32a96ec58bc12e561545be82a"
     end
   elsif OS.linux?
     if Hardware::CPU.arm?
       url "https://github.com/santhosh-john/awsmgr/releases/download/v1.0.0/awsmgr_1.0.0_linux_arm64.tar.gz"
-      sha256 "a5963958eb38c01253ac571ed38374136d4b3b3b3ac29e402a579f96099612cf"
+      sha256 "ba8e9db074591cc319432400043f9553f03c9fe90cad860762076d9e592d13cf"
     else
       url "https://github.com/santhosh-john/awsmgr/releases/download/v1.0.0/awsmgr_1.0.0_linux_amd64.tar.gz"
-      sha256 "bb09efd8b3f7ef9b4affa454a69c2ebeacedd6716f357fe0ecdf231a2d98fbc9"
+      sha256 "3ccd6a92d6a4a9a9314d70bbcf4a5d0d5905d8a6cbba9c27e8526307cc26897a"
     end
   end
 
