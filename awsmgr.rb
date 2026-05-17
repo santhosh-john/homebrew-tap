@@ -11,7 +11,7 @@ class Awsmgr < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/santhosh-john/awsmgr/releases/download/v1.0.1/awsmgr_1.0.1_darwin_amd64.tar.gz"
-      sha256 "9f1499396ea0053b0980f8869b10fddf67e86c3646f6b7efe5aefceb04cc0523"
+      sha256 "b4a1fde81fa6c3a596486da9e39f6512ecf928d5ece811301c9716f56f74ff82"
 
       define_method(:install) do
         bin.install "awsmgr"
@@ -19,7 +19,7 @@ class Awsmgr < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/santhosh-john/awsmgr/releases/download/v1.0.1/awsmgr_1.0.1_darwin_arm64.tar.gz"
-      sha256 "9d8d40730ce74e44af3d459a336e148136bc3dbaf70b2fd1acaaf0621d46742c"
+      sha256 "9fdea5e993be06adce094db928342b611acdc1d4db44bfde27f6b780445cca36"
 
       define_method(:install) do
         bin.install "awsmgr"
@@ -30,14 +30,14 @@ class Awsmgr < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/santhosh-john/awsmgr/releases/download/v1.0.1/awsmgr_1.0.1_linux_amd64.tar.gz"
-      sha256 "6453ed4803d9f2853e560d67e58ff166e6dcd60a9aa4f81e2811e7729a2b8a55"
+      sha256 "f7869ab4ef9855c6dbaa33a25d9ab24d1cee8a64519609969d3107f9c2b6d76a"
       define_method(:install) do
         bin.install "awsmgr"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/santhosh-john/awsmgr/releases/download/v1.0.1/awsmgr_1.0.1_linux_arm64.tar.gz"
-      sha256 "014133d18e43df1bd5f9e01f1c05f4b8de425edf7cc28bccd623fe228101e576"
+      sha256 "75c194b489030e671383054075a7c11b6c8cf71387210d2bb6dad5b19882bc4a"
       define_method(:install) do
         bin.install "awsmgr"
       end
